@@ -6,13 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>UI Library</title>
   <style>
-    body {
-      font-size: 1.5em;
-    }
-
-    .container {
-      margin: 40px;
-      margin-top: 60px;
+    body{ font-size: 1.5em; font-family: arial; color: #555; }
+    .container{ margin: 40px; margin-top: 60px; }
+    button{ 
+      width: 200px; 
+      background: #eee; 
+      padding: 10px; 
+      margin: 20px auto;
+      border: none;
+      border-radius: 4px;
+      font-size: 1em;
+      cursor: pointer;
+      display: block;
     }
   </style>
 </head>
@@ -20,12 +25,12 @@
 <body>
 
   <div class="container">
-    <!-- tooltip -->
+    <!-- TOOLTIP -->
     <p>Lorem dolor sit amet consectetur adipisicing elit. Voluptate sequi odit totam. Quod maiores saepe sequi. <span
         class="tooltip" data-message="I'm a tooltip!!">Illum aspernatur</span> aut voluptatum, sequi quibusdam
       laudantium? Laborum asperiores consequuntur eum corporis exercitationem debitis.</p>
     <h2>Services</h2>
-    <!-- dropdowns -->
+    <!-- DROPDOWNS -->
     <div class="dropdown">
       <div class="trigger">Awesome T-shirt Designs</div>
       <div class="content">
@@ -43,7 +48,7 @@
       </div>
     </div>
     <h2>More information</h2>
-    <!-- tabs -->
+    <!-- TABS -->
     <div class="tabs">
       <ul>
         <li class="trigger active" data-target="#about">About</li>
@@ -68,6 +73,10 @@
           lorem ipsum dolor sit amet consectetur ab numquam similique eligendi soluta necessitatibus, ex quibusdam illum
           eaque voluptate.</p>
       </div>
+    </div>
+    <!-- SNACK BAR -->
+        <div>
+      <button class="snackbar-trigger">click me</button>
     </div>
   </div>
   <script src="assets/bundle.js"></script>
