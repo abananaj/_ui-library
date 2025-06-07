@@ -1,5 +1,6 @@
 import Tooltip from './theatrum-ui/tooltip';
 import Dropdown from './theatrum-ui/dropdown';
+import Tabs from './theatrum-ui/tabs';
 
 // create tooltip
 // const tooltip = new Tooltip(document.querySelector('.tooltip'));
@@ -17,3 +18,8 @@ dropdowns.forEach(dropdown => {
     const instance = new Dropdown(dropdown);
     instance.init();
 })
+
+
+// CREATE TABS
+const tabs = new Tabs(document.querySelector('.tabs'));
+tabs.init();
