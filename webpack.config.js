@@ -13,8 +13,9 @@ module.exports = {
       publicPath: '/assets/'
     }
   },
- module: {
-    rules: [{
+  module: {
+    rules: [
+      {
       // any javascript files
       test: /\.js$/,
       // except in node_modules, only process your code
@@ -27,6 +28,12 @@ module.exports = {
           presets: ['@babel/preset-env']
         }
       }
-    }]
+      },
+      {
+        test: /\.css$/,
+        // loaders right to left, css -loader first
+        use: ['style-loader', 'css-loader']
+      }
+    ]
   }
 };
